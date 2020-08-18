@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Notifiche</string>
+    <string name="title">Titolo</string>
+    <string name="create_notification">Crea notifica</string>
+    <string name="description">Descrizione</string>
+    <string name="permanent_notification">Notifica permanente</string>
+    <string name="update_notification">Aggiorna/Ricrea Notifica</string>
+    <string name="date">Data</string>
+    <string name="histrory">Cronologia</string>
+    <string name="empty_history">Nessuna notifica nella cronologia</string>
+    <string name="dialog_sure_delete_notification">Sei sicuro di voler cancellare la notifica \"<xliff:g id="title">%s</xliff:g>\"?</string>
+    <string name="dialog_sure_delete_history">Sei sicuro di voler cancellare la cronologia?</string>
+    <string name="dialog_yes">Si</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_sure_delete_history_element">Sei sicuro di voler questo elemento dalla cronologia?</string>
+    <string name="histroy_deleted">Cronologia cancellata</string>
+    <string name="creation_date">Data creazione</string>
+    <string name="no_date">Nessuna data</string>
+    <string name="no_description">Nessuna descrizione</string>
+</resources>

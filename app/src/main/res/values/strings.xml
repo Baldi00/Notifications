@@ -1,0 +1,20 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Notifications</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="permanent_notification">Permanent notification</string>
+    <string name="create_notification">Create notification</string>
+    <string name="update_notification">Refresh/Rebuild Notification</string>
+    <string name="date">Date</string>
+    <string name="histrory">History</string>
+    <string name="empty_history">There are no notifications in history</string>
+    <string name="dialog_sure_delete_history">Are you sure you want to delete history?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_sure_delete_history_element">Are you sure you want to remove this item from histrory?</string>
+    <string name="histroy_deleted">History deleted</string>
+    <string name="dialog_sure_delete_notification">Are you sure you want to delete the notification \"<xliff:g id="title">%s</xliff:g>\"?</string>
+    <string name="no_date">No date</string>
+    <string name="no_description">No description</string>
+    <string name="creation_date">Creation date</string>
+</resources>
