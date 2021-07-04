@@ -33,14 +33,14 @@ public class NotificheUtils {
             if (!f.exists()) {
                 f.createNewFile();
                 BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-                bw.write(""+1);
+                bw.write(""+2);
                 bw.close();
-                notificationId = 1;
+                notificationId = 2;
             }else {
                 BufferedReader bf = new BufferedReader(new FileReader(f));
                 notificationId = Integer.parseInt(bf.readLine());
                 if(notificationId>=Integer.MAX_VALUE){
-                    notificationId=1;
+                    notificationId=2;
                     aggiornaNotificationId();
                 }
                 bf.close();

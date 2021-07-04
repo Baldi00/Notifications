@@ -127,7 +127,8 @@ public class MainActivity extends Activity {
         Notification.Builder notification  = new Notification.Builder(this)
                 .setSmallIcon(R.mipmap.icona_notifica)
                 .setContentTitle(titolo.getText())
-                .setContentText(descrizione.getText());
+                .setContentText(descrizione.getText())
+                .setGroup("MyNotifications");
 
         if(permanente.isChecked())
             notification.setOngoing(true);
@@ -156,6 +157,16 @@ public class MainActivity extends Activity {
         NotificationManager notificationManager;
         notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         notificationManager.notify(notificationId,notification.build());
+
+        Notification summaryNotification =
+                new Notification.Builder(MainActivity.this)
+                        .setSmallIcon(R.mipmap.icona_notifica)
+                        .setContentTitle(getResources().getString(R.string.app_name))
+                        .setGroup("MyNotifications")
+                        .setGroupSummary(true)
+                        .build();
+        notificationManager.notify(1,summaryNotification);
+
 
         buttonCreaNotifica.setBackgroundColor(0xFFFFD2AF);
 
@@ -195,6 +206,10 @@ public class MainActivity extends Activity {
                         ripristinaCondizioneIniziale();
                         vengoDaIntent = false;
                         dialog.cancel();
+
+                        if(cronologia.getNotificheVisibili().size()==0){
+                            nManager.cancel(1);
+                        }
                     }
                 });
 
